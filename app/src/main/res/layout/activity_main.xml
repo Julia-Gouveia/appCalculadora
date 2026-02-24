@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- VISOR -->
+    <TextView
+        android:id="@+id/tvVisor"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="0"
+        android:textSize="32sp"
+        android:gravity="end|center_vertical"
+        android:background="#E0E0E0"
+        android:padding="16dp"/>
+
+    <!-- BOTÕES -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:layout_marginTop="20dp">
+
+        <!-- Linha 1 -->
+        <Button android:text="7" android:id="@+id/btn7"/>
+        <Button android:text="8" android:id="@+id/btn8"/>
+        <Button android:text="9" android:id="@+id/btn9"/>
+        <Button android:text="/" android:id="@+id/btnDiv"/>
+
+        <!-- Linha 2 -->
+        <Button android:text="4" android:id="@+id/btn4"/>
+        <Button android:text="5" android:id="@+id/btn5"/>
+        <Button android:text="6" android:id="@+id/btn6"/>
+        <Button android:text="*" android:id="@+id/btnMult"/>
+
+        <!-- Linha 3 -->
+        <Button android:text="1" android:id="@+id/btn1"/>
+        <Button android:text="2" android:id="@+id/btn2"/>
+        <Button android:text="3" android:id="@+id/btn3"/>
+        <Button android:text="-" android:id="@+id/btnSub"/>
+
+        <!-- Linha 4 -->
+        <Button android:text="C" android:id="@+id/btnClear"/>
+        <Button android:text="0" android:id="@+id/btn0"/>
+        <Button android:text="=" android:id="@+id/btnIgual"/>
+        <Button android:text="+" android:id="@+id/btnSoma"/>
+
+    </GridLayout>
+
+</LinearLayout>
